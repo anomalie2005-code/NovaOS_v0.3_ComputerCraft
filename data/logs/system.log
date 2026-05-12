@@ -1,0 +1,1740 @@
+[13:36] [INFO] Boot started
+[13:36] [INFO] Commands loaded
+[13:36] [INFO] Boot completed
+[22:25] [INFO] Boot started
+[22:25] [INFO] Commands loaded
+[22:25] [INFO] Boot completed
+[22:39] [INFO] Command: help
+[22:56] [INFO] Command: fetch
+[23:12] [INFO] Command: ls
+[23:19] [INFO] Command: pwd
+[23:30] [INFO] Command: apps
+[0:51] [INFO] Boot started
+[0:51] [INFO] Commands loaded
+[0:51] [INFO] Boot completed
+[0:58] [INFO] Command: help
+[3:07] [INFO] Command: reboot
+[3:33] [INFO] Boot started
+[3:33] [INFO] Commands loaded
+[3:33] [INFO] Boot completed
+[3:49] [INFO] Command: debug
+[5:04] [INFO] Command: help
+[5:25] [INFO] Command: apps
+[9:06] [INFO] Command: help
+[9:13] [INFO] Command: help
+[9:20] [INFO] Command: ls
+[12:14] [INFO] Boot started
+[12:14] [ERROR] Failed to load command 'fetch': /commands/fetch.lua:1: attempt to call global 'require' (a nil value)
+[12:14] [ERROR] Failed to load command 'theme': /commands/theme.lua:1: attempt to call global 'require' (a nil value)
+[12:14] [INFO] Commands loaded
+[12:14] [INFO] Boot completed
+[12:26] [INFO] Command: ls
+[13:02] [INFO] Command: fetch
+[13:13] [INFO] Command: fetch
+[13:17] [INFO] Command: ls
+[13:22] [INFO] Command: help
+[13:29] [INFO] Command: open
+[13:41] [INFO] Command: pwd
+[14:13] [INFO] Command: reboot
+[14:13] [INFO] Boot started
+[14:13] [ERROR] Failed to load command 'fetch': /commands/fetch.lua:1: attempt to call global 'require' (a nil value)
+[14:13] [ERROR] Failed to load command 'theme': /commands/theme.lua:1: attempt to call global 'require' (a nil value)
+[14:13] [INFO] Commands loaded
+[14:13] [INFO] Boot completed
+[14:31] [INFO] Command: help
+[14:39] [INFO] Command: cat
+[14:53] [INFO] Command: fetch
+[17:04] [INFO] Command: reboot
+[17:04] [INFO] Boot started
+[17:04] [ERROR] Failed to load command 'fetch': /commands/fetch.lua:1: attempt to call global 'require' (a nil value)
+[17:04] [ERROR] Failed to load command 'theme': /commands/theme.lua:1: attempt to call global 'require' (a nil value)
+[17:04] [INFO] Commands loaded
+[17:04] [INFO] Boot completed
+[17:43] [INFO] Command: debug
+[20:56] [INFO] Command: reboot
+[20:56] [INFO] Boot started
+[20:56] [INFO] Commands loaded
+[20:56] [INFO] Boot completed
+[21:41] [INFO] Command: fetch
+[22:25] [INFO] Command: theme
+[22:36] [INFO] Command: theme amber
+[22:43] [INFO] Command: fetch
+[22:54] [INFO] Command: theme cyber
+[23:03] [INFO] Command: fetch
+[23:27] [INFO] Command: theme amber
+[3:00] [INFO] Command: cd
+[3:54] [INFO] Boot started
+[3:55] [INFO] Commands loaded
+[3:55] [INFO] Boot completed
+[4:22] [INFO] Command: fetch
+[4:49] [INFO] Command: theme cyber
+[4:54] [INFO] Command: fetch
+[11:12] [INFO] Command: reboot
+[11:13] [INFO] Boot started
+[11:13] [INFO] Commands loaded
+[11:13] [INFO] Boot completed
+[11:19] [INFO] Command: apps
+[11:32] [INFO] Command: open about
+[11:32] [INFO] Launching app: about
+[11:55] [INFO] Command: open monitor
+[11:55] [INFO] Launching app: monitor
+[12:36] [INFO] Command: open settings
+[12:36] [INFO] Launching app: settings
+[13:05] [INFO] Command: open editor
+[13:05] [INFO] Launching app: editor
+[14:01] [ERROR] App crashed 'editor': /apps/editor/main.lua:54: attempt to index global 'shell' (a nil value)
+[15:07] [INFO] Command: open editor
+[15:07] [INFO] Launching app: editor
+[15:58] [ERROR] App crashed 'editor': /apps/editor/main.lua:54: attempt to index global 'shell' (a nil value)
+[17:31] [INFO] Command: reboot
+[17:32] [INFO] Boot started
+[17:32] [INFO] Commands loaded
+[17:32] [INFO] Boot completed
+[17:43] [INFO] Command: open editor
+[17:43] [INFO] Launching app: editor
+[20:48] [INFO] Command: apps
+[21:04] [INFO] Command: open about
+[21:04] [INFO] Launching app: about
+[21:24] [INFO] Command: reboot
+[21:25] [INFO] Boot started
+[21:25] [INFO] Commands loaded
+[21:25] [INFO] Boot completed
+[21:31] [INFO] Command: open editor
+[21:31] [INFO] Launching app: editor
+[0:38] [INFO] Command: reboot
+[0:39] [INFO] Boot started
+[0:39] [INFO] Commands loaded
+[0:39] [INFO] Boot completed
+[12:36] [INFO] Command: reboot
+[12:37] [INFO] Boot started
+[12:37] [INFO] Commands loaded
+[12:37] [INFO] Boot completed
+[12:52] [INFO] Command: help
+[13:04] [INFO] Command: mkdir
+[13:08] [INFO] Command: mkdir projects
+[13:28] [INFO] Command: touch notes.txt
+[13:39] [INFO] Command: edit notes.txt
+[13:39] [INFO] Launching app: editor
+[14:20] [INFO] Command: ls
+[17:16] [INFO] Command: reboot
+[17:17] [INFO] Boot started
+[17:17] [INFO] Commands loaded
+[17:17] [INFO] Boot completed
+[17:23] [INFO] Command: edit notes.txt
+[17:23] [INFO] Launching app: editor
+[17:49] [INFO] Command: fetch
+[18:05] [INFO] Command: about
+[18:40] [INFO] Command: help
+[19:30] [INFO] Command: open about
+[19:30] [INFO] Launching app: about
+[9:42] [INFO] Command: reboot
+[9:42] [INFO] Boot started
+[9:42] [INFO] Commands loaded
+[9:42] [INFO] Boot completed
+[10:03] [INFO] Command: open 
+[10:10] [INFO] Command: open notes.txt
+[10:38] [INFO] Command: edit notes.txt
+[10:38] [INFO] Launching app: editor
+[10:59] [INFO] Command: open about
+[10:59] [INFO] Launching app: about
+[11:14] [INFO] Command: open about
+[11:14] [INFO] Launching app: about
+[11:28] [INFO] Command: edit notes.txt
+[11:28] [INFO] Launching app: editor
+[12:18] [INFO] Command: open settings
+[12:18] [INFO] Launching app: settings
+[13:03] [INFO] Command: open monitor
+[13:03] [INFO] Launching app: monitor
+[13:44] [INFO] Command: open files
+[13:44] [INFO] Launching app: files
+[14:37] [INFO] Launching app: editor
+[15:30] [INFO] Launching app: editor
+[16:09] [INFO] Launching app: editor
+[21:47] [INFO] Boot started
+[21:47] [INFO] Commands loaded
+[21:47] [INFO] Boot completed
+[22:02] [INFO] Command: open files
+[22:02] [INFO] Launching app: files
+[22:07] [INFO] Launching app: editor
+[22:50] [INFO] Command: reboot
+[22:51] [INFO] Boot started
+[22:51] [INFO] Commands loaded
+[22:51] [INFO] Boot completed
+[23:16] [INFO] Command: open files
+[23:16] [INFO] Launching app: files
+[23:30] [INFO] Launching app: editor
+[0:48] [INFO] Command: open about
+[0:48] [INFO] Launching app: about
+[7:05] [INFO] Command: reboot
+[7:06] [INFO] Boot started
+[7:06] [INFO] Commands loaded
+[7:06] [INFO] Boot completed
+[7:11] [INFO] Command: edit notes.txt
+[7:11] [INFO] Launching app: editor
+[7:44] [INFO] Command: open files
+[7:44] [INFO] Launching app: files
+[7:48] [INFO] Launching app: editor
+[9:29] [INFO] Command: open editer
+[10:15] [INFO] Command: open editor
+[10:15] [INFO] Launching app: editor
+[11:09] [INFO] Command: edit ggg.lua
+[11:09] [INFO] Launching app: editor
+[11:41] [INFO] Command: open editor
+[11:41] [INFO] Launching app: editor
+[13:54] [ERROR] App crashed 'editor': Terminated
+[14:00] [INFO] Boot started
+[14:00] [INFO] Commands loaded
+[14:00] [INFO] Boot completed
+[17:08] [INFO] Command: reboot
+[17:09] [INFO] Boot started
+[17:09] [INFO] Commands loaded
+[17:09] [INFO] Boot completed
+[17:19] [INFO] Command: open editor
+[17:19] [INFO] Launching app: editor
+[18:15] [INFO] Command: open editor
+[18:15] [INFO] Launching app: editor
+[19:21] [INFO] Boot started
+[19:22] [INFO] Commands loaded
+[19:22] [INFO] Boot completed
+[21:32] [INFO] Command: open monitor
+[21:32] [INFO] Launching app: monitor
+[22:11] [INFO] Command: open settings
+[22:11] [INFO] Launching app: settings
+[3:29] [INFO] Command: reboot
+[3:30] [INFO] Boot started
+[3:30] [INFO] Commands loaded
+[3:30] [INFO] Boot completed
+[3:42] [INFO] Command: open settings
+[3:42] [INFO] Launching app: settings
+[4:32] [INFO] Command: theme ambre
+[4:49] [INFO] Command: theme
+[5:06] [INFO] Command: theme arch
+[5:18] [INFO] Command: fetch
+[5:34] [INFO] Command: open settings
+[5:34] [INFO] Launching app: settings
+[6:15] [INFO] Command: open files
+[6:15] [INFO] Launching app: files
+[6:37] [INFO] Command: open editor
+[6:37] [INFO] Launching app: editor
+[8:04] [INFO] Boot started
+[8:04] [INFO] Commands loaded
+[8:04] [INFO] Boot completed
+[14:11] [INFO] Command: reboot
+[14:12] [INFO] Boot started
+[14:12] [INFO] Commands loaded
+[14:12] [INFO] Boot completed
+[14:24] [INFO] Command: peripherals
+[14:51] [INFO] Command: log
+[15:06] [INFO] Command: reboot
+[15:07] [INFO] Boot started
+[15:07] [INFO] Commands loaded
+[15:07] [INFO] Boot completed
+[15:15] [INFO] Command: peripherals
+[16:08] [INFO] Command: log
+[16:50] [INFO] Command: log 20
+[17:51] [INFO] Command: open monitor
+[17:51] [INFO] Launching app: monitor
+[20:33] [INFO] Command: ctx.ui.Input
+[20:40] [INFO] Command: ctx.ui.Table
+[1:35] [INFO] Command: reboot
+[1:36] [INFO] Boot started
+[1:36] [INFO] Commands loaded
+[1:36] [INFO] Boot completed
+[1:48] [INFO] Command: fetch
+[2:01] [INFO] Command: fetch
+[2:19] [INFO] Command: peripherals
+[2:42] [INFO] Command: log
+[2:56] [INFO] Command: log 20
+[3:54] [INFO] Command: open monitor
+[3:54] [INFO] Launching app: monitor
+[11:12] [INFO] Command: reboot
+[11:12] [INFO] Boot started
+[11:12] [INFO] Commands loaded
+[11:12] [INFO] Boot completed
+[11:36] [INFO] Command: open monitor 
+[11:36] [INFO] Launching app: monitor
+[14:45] [INFO] Command: reboot
+[14:46] [INFO] Boot started
+[14:46] [INFO] Commands loaded
+[14:46] [INFO] Boot completed
+[15:01] [INFO] Command: open monitor
+[15:01] [INFO] Launching app: monitor
+[15:49] [INFO] Command: reboot
+[15:49] [INFO] Boot started
+[15:49] [INFO] Commands loaded
+[15:49] [INFO] Boot completed
+[18:34] [INFO] Command: reboot
+[18:35] [INFO] Boot started
+[18:35] [INFO] Commands loaded
+[18:35] [INFO] Boot completed
+[21:18] [INFO] Command: reboot
+[21:19] [INFO] Boot started
+[21:19] [INFO] Commands loaded
+[21:19] [INFO] Boot completed
+[21:28] [INFO] Command: reboot
+[21:29] [INFO] Boot started
+[21:29] [INFO] Commands loaded
+[21:29] [INFO] Boot completed
+[22:00] [INFO] Command: fetch
+[22:20] [INFO] Command: fetch
+[22:59] [INFO] Command: reboot
+[23:00] [INFO] Boot started
+[23:00] [INFO] Commands loaded
+[23:00] [INFO] Boot completed
+[4:02] [INFO] Command: reboot
+[4:02] [INFO] Boot started
+[4:02] [INFO] Commands loaded
+[4:02] [INFO] Boot completed
+[4:39] [INFO] Command: open monitor
+[4:39] [INFO] Launching app: monitor
+[5:17] [INFO] Command: re
+[5:20] [INFO] Command: reboot
+[5:21] [INFO] Boot started
+[5:21] [INFO] Commands loaded
+[5:21] [INFO] Boot completed
+[5:52] [INFO] Command: apps
+[10:47] [INFO] Command: reboot
+[10:48] [INFO] Boot started
+[10:48] [INFO] Commands loaded
+[10:48] [INFO] Boot completed
+[10:57] [INFO] Command: open launcher
+[10:57] [INFO] Launching app: launcher
+[11:40] [INFO] Launching app: files
+[12:57] [INFO] Launching app: monitor
+[13:14] [INFO] Launching app: about
+[2:13] [INFO] Command: reboot
+[2:13] [INFO] Boot started
+[2:13] [INFO] Commands loaded
+[2:13] [INFO] Boot completed
+[2:21] [INFO] Command: apps
+[3:10] [INFO] Command: open launcher
+[3:10] [INFO] Launching app: launcher
+[3:44] [INFO] Command: pen about
+[3:53] [INFO] Command: open about
+[3:53] [INFO] Launching app: about
+[4:07] [INFO] Command: open about
+[4:07] [INFO] Launching app: about
+[4:36] [INFO] Command: open files
+[4:36] [INFO] Launching app: files
+[9:11] [INFO] Command: reboot
+[9:11] [INFO] Boot started
+[9:11] [INFO] Commands loaded
+[9:11] [INFO] Boot completed
+[9:17] [INFO] Command: apps
+[10:31] [INFO] Command: open launcher
+[10:31] [INFO] Launching app: launcher
+[16:53] [INFO] Command: reboot
+[16:54] [INFO] Boot started
+[16:54] [INFO] Commands loaded
+[16:54] [INFO] Boot completed
+[17:02] [INFO] Command: apps
+[17:33] [INFO] Command: open launcher
+[17:33] [INFO] Launching app: launcher
+[2:08] [INFO] Command: reboot
+[2:08] [INFO] Boot started
+[2:08] [INFO] Command loaded: apps
+[2:08] [INFO] Command loaded: cat
+[2:08] [INFO] Command loaded: cd
+[2:08] [INFO] Command loaded: clear
+[2:08] [INFO] Command loaded: cp
+[2:08] [INFO] Command loaded: edit
+[2:08] [INFO] Command loaded: fetch
+[2:08] [INFO] Command loaded: help
+[2:08] [INFO] Command loaded: log
+[2:08] [INFO] Command loaded: ls
+[2:08] [INFO] Command loaded: mkdir
+[2:08] [INFO] Command loaded: mv
+[2:08] [INFO] Command loaded: open
+[2:08] [INFO] Command loaded: peripherals
+[2:08] [INFO] Command loaded: pwd
+[2:08] [INFO] Command loaded: reboot
+[2:08] [INFO] Command loaded: rm
+[2:08] [INFO] Command loaded: run
+[2:08] [INFO] Command loaded: shutdown
+[2:08] [INFO] Command loaded: theme
+[2:08] [INFO] Command loaded: touch
+[2:08] [INFO] Commands loaded
+[2:08] [INFO] Boot completed
+[2:16] [INFO] Command: help
+[2:36] [INFO] Command: help open
+[3:02] [INFO] Command: help edit
+[3:43] [INFO] Command: help rm
+[4:05] [INFO] Command: edit "my notes.txt"
+[4:05] [INFO] Launching app: editor
+[5:17] [INFO] Command: open launcher
+[5:17] [INFO] Launching app: launcher
+[5:44] [INFO] Launching app: files
+[15:34] [INFO] Command: reboot
+[15:35] [INFO] Boot started
+[15:35] [INFO] Command loaded: apps
+[15:35] [INFO] Command loaded: cat
+[15:35] [INFO] Command loaded: cd
+[15:35] [INFO] Command loaded: clear
+[15:35] [INFO] Command loaded: cp
+[15:35] [INFO] Command loaded: edit
+[15:35] [INFO] Command loaded: fetch
+[15:35] [INFO] Command loaded: help
+[15:35] [INFO] Command loaded: log
+[15:35] [INFO] Command loaded: ls
+[15:35] [INFO] Command loaded: mkdir
+[15:35] [INFO] Command loaded: mv
+[15:35] [INFO] Command loaded: open
+[15:35] [INFO] Command loaded: peripherals
+[15:35] [INFO] Command loaded: pwd
+[15:35] [INFO] Command loaded: reboot
+[15:35] [INFO] Command loaded: rm
+[15:35] [INFO] Command loaded: run
+[15:35] [INFO] Command loaded: shutdown
+[15:35] [INFO] Command loaded: theme
+[15:35] [INFO] Command loaded: touch
+[15:35] [INFO] Commands loaded
+[15:35] [INFO] Boot completed
+[15:44] [INFO] Command: open logs
+[15:44] [INFO] Launching app: logs
+[18:06] [INFO] Command: open launcher
+[18:06] [INFO] Launching app: launcher
+[23:02] [INFO] Launching app: logs
+[5:06] [INFO] Launching app: logs
+[5:25] [INFO] Command: reboot
+[5:26] [INFO] Boot started
+[5:26] [INFO] Command loaded: apps
+[5:26] [INFO] Command loaded: cat
+[5:26] [INFO] Command loaded: cd
+[5:26] [INFO] Command loaded: clear
+[5:26] [INFO] Command loaded: cp
+[5:26] [INFO] Command loaded: edit
+[5:26] [INFO] Command loaded: fetch
+[5:26] [INFO] Command loaded: help
+[5:26] [INFO] Command loaded: log
+[5:26] [INFO] Command loaded: ls
+[5:26] [INFO] Command loaded: mkdir
+[5:26] [INFO] Command loaded: mv
+[5:26] [INFO] Command loaded: open
+[5:26] [INFO] Command loaded: peripherals
+[5:26] [INFO] Command loaded: pwd
+[5:26] [INFO] Command loaded: reboot
+[5:26] [INFO] Command loaded: rm
+[5:26] [INFO] Command loaded: run
+[5:26] [INFO] Command loaded: shutdown
+[5:26] [INFO] Command loaded: theme
+[5:26] [INFO] Command loaded: touch
+[5:26] [INFO] Commands loaded
+[5:26] [INFO] Boot completed
+[5:36] [INFO] Command: open tasks
+[5:36] [INFO] Launching app: tasks
+[6:18] [INFO] Command: open tasks
+[6:18] [INFO] Launching app: tasks
+[6:54] [INFO] Command: open launcher
+[6:54] [INFO] Launching app: launcher
+[7:36] [INFO] Command: apps
+[18:38] [INFO] Command: reboot
+[18:38] [INFO] Boot started
+[18:38] [INFO] Command loaded: apps
+[18:38] [INFO] Command loaded: cat
+[18:38] [INFO] Command loaded: cd
+[18:38] [INFO] Command loaded: clear
+[18:38] [INFO] Command loaded: cp
+[18:38] [INFO] Command loaded: edit
+[18:38] [INFO] Command loaded: fetch
+[18:38] [INFO] Command loaded: help
+[18:38] [INFO] Command loaded: log
+[18:38] [INFO] Command loaded: ls
+[18:38] [INFO] Command loaded: mkdir
+[18:38] [INFO] Command loaded: mv
+[18:38] [INFO] Command loaded: open
+[18:38] [INFO] Command loaded: peripherals
+[18:38] [INFO] Command loaded: pwd
+[18:38] [INFO] Command loaded: reboot
+[18:38] [INFO] Command loaded: rm
+[18:38] [INFO] Command loaded: run
+[18:38] [INFO] Command loaded: shutdown
+[18:38] [INFO] Command loaded: theme
+[18:38] [INFO] Command loaded: touch
+[18:38] [INFO] Commands loaded
+[18:38] [INFO] Boot completed
+[18:48] [INFO] Command: open packages
+[18:48] [INFO] Launching app: packages
+[19:08] [INFO] Launching app: about
+[19:22] [INFO] Launching app: editor
+[19:30] [INFO] Launching app: launcher
+[19:34] [INFO] Launching app: monitor
+[20:48] [INFO] Launching app: files
+[22:37] [INFO] Command: open launcher
+[22:37] [INFO] Launching app: launcher
+[8:29] [INFO] Command: reboot
+[8:30] [INFO] Boot started
+[8:30] [INFO] Command loaded: apps
+[8:30] [INFO] Command loaded: cat
+[8:30] [INFO] Command loaded: cd
+[8:30] [INFO] Command loaded: clear
+[8:30] [INFO] Command loaded: cp
+[8:30] [INFO] Command loaded: edit
+[8:30] [INFO] Command loaded: fetch
+[8:30] [INFO] Command loaded: help
+[8:30] [INFO] Command loaded: log
+[8:30] [INFO] Command loaded: ls
+[8:30] [INFO] Command loaded: mkdir
+[8:30] [INFO] Command loaded: mv
+[8:30] [INFO] Command loaded: open
+[8:30] [INFO] Command loaded: peripherals
+[8:30] [INFO] Command loaded: pwd
+[8:30] [INFO] Command loaded: reboot
+[8:30] [INFO] Command loaded: rm
+[8:30] [INFO] Command loaded: run
+[8:30] [INFO] Command loaded: shutdown
+[8:30] [INFO] Command loaded: theme
+[8:30] [INFO] Command loaded: touch
+[8:30] [INFO] Commands loaded
+[8:30] [INFO] Boot completed
+[8:37] [INFO] Command: help ls
+[8:58] [INFO] Command: help cd
+[9:10] [INFO] Command: help rm
+[9:19] [INFO] Command: help cp
+[9:27] [INFO] Command: help mv
+[9:44] [INFO] Command: touch "my notes.txt"
+[9:59] [INFO] Command: ls
+[10:31] [INFO] Command: cat "my notes.txt"
+[11:05] [INFO] Command: mv "my notes.txt" "renamed notes.txt"
+[11:35] [INFO] Command: cp "renamed notes.txt" "copy notes.txt"
+[23:20] [INFO] Command: reboot
+[23:20] [INFO] Boot started
+[23:20] [INFO] Command loaded: apps
+[23:20] [INFO] Command loaded: cat
+[23:20] [INFO] Command loaded: cd
+[23:20] [INFO] Command loaded: clear
+[23:20] [INFO] Command loaded: cp
+[23:20] [INFO] Command loaded: edit
+[23:20] [INFO] Command loaded: fetch
+[23:20] [INFO] Command loaded: help
+[23:20] [INFO] Command loaded: log
+[23:20] [INFO] Command loaded: ls
+[23:20] [INFO] Command loaded: mkdir
+[23:20] [INFO] Command loaded: mv
+[23:20] [INFO] Command loaded: open
+[23:20] [INFO] Command loaded: peripherals
+[23:20] [INFO] Command loaded: pwd
+[23:20] [INFO] Command loaded: reboot
+[23:20] [INFO] Command loaded: reload
+[23:20] [INFO] Command loaded: rm
+[23:20] [INFO] Command loaded: run
+[23:20] [INFO] Command loaded: shutdown
+[23:20] [INFO] Command loaded: theme
+[23:20] [INFO] Command loaded: touch
+[23:20] [INFO] Commands loaded
+[23:20] [INFO] Boot completed
+[23:36] [INFO] Command: help clear
+[23:52] [INFO] Command: help reload
+[0:12] [INFO] Command: help reboot
+[0:24] [INFO] Command: help shutdown
+[0:34] [INFO] Command: help theme
+[0:43] [INFO] Command: help run
+[0:51] [INFO] Command: help peripherals
+[0:59] [INFO] Command: help log
+[1:12] [INFO] Command: help apps
+[1:24] [INFO] Command: help fetch
+[1:41] [INFO] Command: cls
+[1:44] [INFO] Command: cls
+[1:51] [INFO] Command: restart
+[1:51] [INFO] Reboot requested
+[1:51] [INFO] Boot started
+[1:51] [INFO] Command loaded: apps
+[1:51] [INFO] Command loaded: cat
+[1:51] [INFO] Command loaded: cd
+[1:51] [INFO] Command loaded: clear
+[1:51] [INFO] Command loaded: cp
+[1:51] [INFO] Command loaded: edit
+[1:51] [INFO] Command loaded: fetch
+[1:51] [INFO] Command loaded: help
+[1:51] [INFO] Command loaded: log
+[1:51] [INFO] Command loaded: ls
+[1:51] [INFO] Command loaded: mkdir
+[1:51] [INFO] Command loaded: mv
+[1:51] [INFO] Command loaded: open
+[1:51] [INFO] Command loaded: peripherals
+[1:51] [INFO] Command loaded: pwd
+[1:51] [INFO] Command loaded: reboot
+[1:51] [INFO] Command loaded: reload
+[1:51] [INFO] Command loaded: rm
+[1:51] [INFO] Command loaded: run
+[1:51] [INFO] Command loaded: shutdown
+[1:51] [INFO] Command loaded: theme
+[1:51] [INFO] Command loaded: touch
+[1:51] [INFO] Commands loaded
+[1:51] [INFO] Boot completed
+[2:07] [INFO] Command: periph
+[3:04] [INFO] Command: clear
+[3:21] [INFO] Command: pkg list
+[6:42] [INFO] Command: reload
+[6:42] [INFO] Command loaded: apps
+[6:42] [INFO] Command loaded: cat
+[6:42] [INFO] Command loaded: cd
+[6:42] [INFO] Command loaded: clear
+[6:42] [INFO] Command loaded: cp
+[6:42] [INFO] Command loaded: edit
+[6:42] [INFO] Command loaded: fetch
+[6:42] [INFO] Command loaded: help
+[6:42] [INFO] Command loaded: log
+[6:42] [INFO] Command loaded: ls
+[6:42] [INFO] Command loaded: mkdir
+[6:42] [INFO] Command loaded: mv
+[6:42] [INFO] Command loaded: open
+[6:42] [INFO] Command loaded: peripherals
+[6:42] [INFO] Command loaded: pkg
+[6:42] [INFO] Command loaded: pwd
+[6:42] [INFO] Command loaded: reboot
+[6:42] [INFO] Command loaded: reload
+[6:42] [INFO] Command loaded: rm
+[6:42] [INFO] Command loaded: run
+[6:42] [INFO] Command loaded: shutdown
+[6:42] [INFO] Command loaded: theme
+[6:42] [INFO] Command loaded: touch
+[6:42] [INFO] Commands reloaded
+[6:51] [INFO] Command: help pkg
+[7:06] [INFO] Command: pkg
+[7:23] [INFO] Command: pkg list
+[7:35] [INFO] Command: pkg info editor
+[7:46] [INFO] Command: pkg validate
+[8:06] [INFO] Command: pkg open logs
+[8:06] [INFO] Launching app: logs
+[8:32] [INFO] Command: pkg new demo-app
+[8:32] [INFO] Package created: demo-app
+[9:42] [INFO] Command: pkg new demo-app
+[9:42] [INFO] Package created: demo-app
+[9:49] [INFO] Command: open demo-app
+[9:49] [INFO] Launching app: demo-app
+[10:01] [INFO] Command: open launcher
+[10:01] [INFO] Launching app: launcher
+[10:23] [INFO] Command: open packages
+[10:23] [INFO] Launching app: packages
+[3:52] [INFO] Command: reboot
+[3:52] [INFO] Reboot requested
+[3:53] [INFO] Boot started
+[3:53] [INFO] Command loaded: apps
+[3:53] [INFO] Command loaded: cat
+[3:53] [INFO] Command loaded: cd
+[3:53] [INFO] Command loaded: clear
+[3:53] [INFO] Command loaded: cp
+[3:53] [INFO] Command loaded: edit
+[3:53] [INFO] Command loaded: fetch
+[3:53] [INFO] Command loaded: help
+[3:53] [INFO] Command loaded: log
+[3:53] [INFO] Command loaded: ls
+[3:53] [INFO] Command loaded: mkdir
+[3:53] [INFO] Command loaded: mv
+[3:53] [INFO] Command loaded: open
+[3:53] [INFO] Command loaded: peripherals
+[3:53] [INFO] Command loaded: pkg
+[3:53] [INFO] Command loaded: pwd
+[3:53] [INFO] Command loaded: reboot
+[3:53] [INFO] Command loaded: reload
+[3:53] [INFO] Command loaded: rm
+[3:53] [INFO] Command loaded: run
+[3:53] [INFO] Command loaded: shutdown
+[3:53] [INFO] Command loaded: theme
+[3:53] [INFO] Command loaded: touch
+[3:53] [INFO] Commands loaded
+[3:53] [INFO] Boot completed
+[4:06] [INFO] Command: open files
+[4:06] [INFO] Launching app: files
+[13:40] [INFO] Command: reboot
+[13:40] [INFO] Reboot requested
+[13:41] [INFO] Boot started
+[13:41] [INFO] Command loaded: apps
+[13:41] [INFO] Command loaded: cat
+[13:41] [INFO] Command loaded: cd
+[13:41] [INFO] Command loaded: clear
+[13:41] [INFO] Command loaded: cp
+[13:41] [INFO] Command loaded: edit
+[13:41] [INFO] Command loaded: fetch
+[13:41] [INFO] Command loaded: help
+[13:41] [INFO] Command loaded: log
+[13:41] [INFO] Command loaded: ls
+[13:41] [INFO] Command loaded: mkdir
+[13:41] [INFO] Command loaded: mv
+[13:41] [INFO] Command loaded: open
+[13:41] [INFO] Command loaded: peripherals
+[13:41] [INFO] Command loaded: pkg
+[13:41] [INFO] Command loaded: pwd
+[13:41] [INFO] Command loaded: reboot
+[13:41] [INFO] Command loaded: reload
+[13:41] [INFO] Command loaded: rm
+[13:41] [INFO] Command loaded: run
+[13:41] [INFO] Command loaded: shutdown
+[13:41] [INFO] Command loaded: theme
+[13:41] [INFO] Command loaded: touch
+[13:41] [INFO] Commands loaded
+[13:41] [INFO] Boot completed
+[14:20] [INFO] Command: open files
+[14:20] [INFO] Launching app: files
+[20:35] [INFO] Command: reboot
+[20:35] [INFO] Reboot requested
+[20:36] [INFO] Boot started
+[20:36] [INFO] Command loaded: apps
+[20:36] [INFO] Command loaded: cat
+[20:36] [INFO] Command loaded: cd
+[20:36] [INFO] Command loaded: clear
+[20:36] [INFO] Command loaded: cp
+[20:36] [INFO] Command loaded: edit
+[20:36] [INFO] Command loaded: fetch
+[20:36] [INFO] Command loaded: help
+[20:36] [INFO] Command loaded: log
+[20:36] [INFO] Command loaded: ls
+[20:36] [INFO] Command loaded: mkdir
+[20:36] [INFO] Command loaded: mv
+[20:36] [INFO] Command loaded: open
+[20:36] [INFO] Command loaded: peripherals
+[20:36] [INFO] Command loaded: pkg
+[20:36] [INFO] Command loaded: pwd
+[20:36] [INFO] Command loaded: reboot
+[20:36] [INFO] Command loaded: reload
+[20:36] [INFO] Command loaded: rm
+[20:36] [INFO] Command loaded: run
+[20:36] [INFO] Command loaded: shutdown
+[20:36] [INFO] Command loaded: theme
+[20:36] [INFO] Command loaded: touch
+[20:36] [INFO] Commands loaded
+[20:36] [INFO] Boot completed
+[20:42] [INFO] Command: open packages
+[20:42] [INFO] Launching app: packages
+[0:20] [INFO] Command: reboot
+[0:20] [INFO] Reboot requested
+[0:21] [INFO] Boot started
+[0:21] [INFO] Command loaded: apps
+[0:21] [INFO] Command loaded: cat
+[0:21] [INFO] Command loaded: cd
+[0:21] [INFO] Command loaded: clear
+[0:21] [INFO] Command loaded: cp
+[0:21] [INFO] Command loaded: edit
+[0:21] [INFO] Command loaded: fetch
+[0:21] [INFO] Command loaded: help
+[0:21] [INFO] Command loaded: log
+[0:21] [INFO] Command loaded: ls
+[0:21] [INFO] Command loaded: mkdir
+[0:21] [INFO] Command loaded: mv
+[0:21] [INFO] Command loaded: open
+[0:21] [INFO] Command loaded: peripherals
+[0:21] [INFO] Command loaded: pkg
+[0:21] [INFO] Command loaded: pwd
+[0:21] [INFO] Command loaded: reboot
+[0:21] [INFO] Command loaded: reload
+[0:21] [INFO] Command loaded: rm
+[0:21] [INFO] Command loaded: run
+[0:21] [INFO] Command loaded: shutdown
+[0:21] [INFO] Command loaded: theme
+[0:21] [INFO] Command loaded: touch
+[0:21] [INFO] Commands loaded
+[0:21] [INFO] Boot completed
+[0:26] [INFO] Command: open launcher
+[0:26] [INFO] Launching app: launcher
+[3:48] [INFO] Command: reboot
+[3:48] [INFO] Reboot requested
+[3:49] [INFO] Boot started
+[3:49] [INFO] Command loaded: apps
+[3:49] [INFO] Command loaded: cat
+[3:49] [INFO] Command loaded: cd
+[3:49] [INFO] Command loaded: clear
+[3:49] [INFO] Command loaded: cp
+[3:49] [INFO] Command loaded: edit
+[3:49] [INFO] Command loaded: fetch
+[3:49] [INFO] Command loaded: help
+[3:49] [INFO] Command loaded: log
+[3:49] [INFO] Command loaded: ls
+[3:49] [INFO] Command loaded: mkdir
+[3:49] [INFO] Command loaded: mv
+[3:49] [INFO] Command loaded: open
+[3:49] [INFO] Command loaded: peripherals
+[3:49] [INFO] Command loaded: pkg
+[3:49] [INFO] Command loaded: pwd
+[3:49] [INFO] Command loaded: reboot
+[3:49] [INFO] Command loaded: reload
+[3:49] [INFO] Command loaded: rm
+[3:49] [INFO] Command loaded: run
+[3:49] [INFO] Command loaded: shutdown
+[3:49] [INFO] Command loaded: theme
+[3:49] [INFO] Command loaded: touch
+[3:49] [INFO] Commands loaded
+[3:49] [INFO] Boot completed
+[3:55] [INFO] Command: open logs
+[3:55] [INFO] Launching app: logs
+[7:25] [INFO] Command: reboot
+[7:25] [INFO] Reboot requested
+[7:26] [INFO] Boot started
+[7:26] [INFO] Command loaded: apps
+[7:26] [INFO] Command loaded: cat
+[7:26] [INFO] Command loaded: cd
+[7:26] [INFO] Command loaded: clear
+[7:26] [INFO] Command loaded: cp
+[7:26] [INFO] Command loaded: edit
+[7:26] [INFO] Command loaded: fetch
+[7:26] [INFO] Command loaded: help
+[7:26] [INFO] Command loaded: log
+[7:26] [INFO] Command loaded: ls
+[7:26] [INFO] Command loaded: mkdir
+[7:26] [INFO] Command loaded: mv
+[7:26] [INFO] Command loaded: open
+[7:26] [INFO] Command loaded: peripherals
+[7:26] [INFO] Command loaded: pkg
+[7:26] [INFO] Command loaded: pwd
+[7:26] [INFO] Command loaded: reboot
+[7:26] [INFO] Command loaded: reload
+[7:26] [INFO] Command loaded: rm
+[7:26] [INFO] Command loaded: run
+[7:26] [INFO] Command loaded: shutdown
+[7:26] [INFO] Command loaded: theme
+[7:26] [INFO] Command loaded: touch
+[7:26] [INFO] Commands loaded
+[7:26] [INFO] Boot completed
+[7:34] [INFO] Command: open tasks
+[7:34] [INFO] Launching app: tasks
+[9:47] [INFO] Boot started
+[9:47] [INFO] Command loaded: apps
+[9:47] [INFO] Command loaded: cat
+[9:47] [INFO] Command loaded: cd
+[9:47] [INFO] Command loaded: clear
+[9:47] [INFO] Command loaded: cp
+[9:47] [INFO] Command loaded: edit
+[9:47] [INFO] Command loaded: fetch
+[9:47] [INFO] Command loaded: help
+[9:47] [INFO] Command loaded: log
+[9:47] [INFO] Command loaded: ls
+[9:47] [INFO] Command loaded: mkdir
+[9:47] [INFO] Command loaded: mv
+[9:47] [INFO] Command loaded: open
+[9:47] [INFO] Command loaded: peripherals
+[9:47] [INFO] Command loaded: pkg
+[9:47] [INFO] Command loaded: pwd
+[9:47] [INFO] Command loaded: reboot
+[9:47] [INFO] Command loaded: reload
+[9:48] [INFO] Command loaded: rm
+[9:48] [INFO] Command loaded: run
+[9:48] [INFO] Command loaded: shutdown
+[9:48] [INFO] Command loaded: theme
+[9:48] [INFO] Command loaded: touch
+[9:48] [INFO] Commands loaded
+[9:48] [INFO] Boot completed
+[10:07] [INFO] Command: reboot
+[10:07] [INFO] Reboot requested
+[10:07] [INFO] Boot started
+[10:07] [INFO] Command loaded: apps
+[10:07] [INFO] Command loaded: cat
+[10:07] [INFO] Command loaded: cd
+[10:07] [INFO] Command loaded: clear
+[10:07] [INFO] Command loaded: cp
+[10:07] [INFO] Command loaded: edit
+[10:07] [INFO] Command loaded: fetch
+[10:07] [INFO] Command loaded: help
+[10:07] [INFO] Command loaded: log
+[10:07] [INFO] Command loaded: ls
+[10:07] [INFO] Command loaded: mkdir
+[10:07] [INFO] Command loaded: mv
+[10:07] [INFO] Command loaded: open
+[10:07] [INFO] Command loaded: peripherals
+[10:07] [INFO] Command loaded: pkg
+[10:07] [INFO] Command loaded: pwd
+[10:07] [INFO] Command loaded: reboot
+[10:07] [INFO] Command loaded: reload
+[10:07] [INFO] Command loaded: rm
+[10:07] [INFO] Command loaded: run
+[10:07] [INFO] Command loaded: shutdown
+[10:07] [INFO] Command loaded: theme
+[10:07] [INFO] Command loaded: touch
+[10:07] [INFO] Commands loaded
+[10:07] [INFO] Boot completed
+[10:14] [INFO] Command: open monitor
+[10:14] [INFO] Launching app: monitor
+[11:17] [INFO] Command: open monitor
+[11:17] [INFO] Launching app: monitor
+[15:23] [INFO] Command: open editor
+[15:23] [INFO] Launching app: editor
+[2:20] [INFO] Command: reboot
+[2:20] [INFO] Reboot requested
+[2:21] [INFO] Boot started
+[2:21] [INFO] Command loaded: apps
+[2:21] [INFO] Command loaded: cat
+[2:21] [INFO] Command loaded: cd
+[2:21] [INFO] Command loaded: clear
+[2:21] [INFO] Command loaded: cp
+[2:21] [INFO] Command loaded: edit
+[2:21] [INFO] Command loaded: fetch
+[2:21] [INFO] Command loaded: help
+[2:21] [INFO] Command loaded: log
+[2:21] [INFO] Command loaded: ls
+[2:21] [INFO] Command loaded: mkdir
+[2:21] [INFO] Command loaded: mv
+[2:21] [INFO] Command loaded: open
+[2:21] [INFO] Command loaded: peripherals
+[2:21] [INFO] Command loaded: pkg
+[2:21] [INFO] Command loaded: pwd
+[2:21] [INFO] Command loaded: reboot
+[2:21] [INFO] Command loaded: reload
+[2:21] [INFO] Command loaded: rm
+[2:21] [INFO] Command loaded: run
+[2:21] [INFO] Command loaded: shutdown
+[2:21] [INFO] Command loaded: theme
+[2:21] [INFO] Command loaded: touch
+[2:21] [INFO] Commands loaded
+[2:21] [INFO] Boot completed
+[2:26] [INFO] Command: open network
+[2:26] [INFO] Launching app: network
+[6:23] [INFO] Command: open launcher
+[6:23] [INFO] Launching app: launcher
+[6:45] [INFO] Command: open packages
+[6:45] [INFO] Launching app: packages
+[7:54] [INFO] Command: apps
+[8:18] [INFO] Command: open launcher
+[8:18] [INFO] Launching app: launcher
+[9:13] [INFO] Command: reboot
+[9:13] [INFO] Reboot requested
+[9:14] [INFO] Boot started
+[9:14] [INFO] Command loaded: apps
+[9:14] [INFO] Command loaded: cat
+[9:14] [INFO] Command loaded: cd
+[9:14] [INFO] Command loaded: clear
+[9:14] [INFO] Command loaded: cp
+[9:14] [INFO] Command loaded: edit
+[9:14] [INFO] Command loaded: fetch
+[9:14] [INFO] Command loaded: help
+[9:14] [INFO] Command loaded: log
+[9:14] [INFO] Command loaded: ls
+[9:14] [INFO] Command loaded: mkdir
+[9:14] [INFO] Command loaded: mv
+[9:14] [INFO] Command loaded: open
+[9:14] [INFO] Command loaded: peripherals
+[9:14] [INFO] Command loaded: pkg
+[9:14] [INFO] Command loaded: pwd
+[9:14] [INFO] Command loaded: reboot
+[9:14] [INFO] Command loaded: reload
+[9:14] [INFO] Command loaded: rm
+[9:14] [INFO] Command loaded: run
+[9:14] [INFO] Command loaded: shutdown
+[9:14] [INFO] Command loaded: theme
+[9:14] [INFO] Command loaded: touch
+[9:14] [INFO] Commands loaded
+[9:14] [INFO] Boot completed
+[13:14] [INFO] Command: reboot
+[13:14] [INFO] Reboot requested
+[13:14] [INFO] Boot started
+[13:14] [INFO] Command loaded: apps
+[13:14] [INFO] Command loaded: cat
+[13:14] [INFO] Command loaded: cd
+[13:14] [INFO] Command loaded: clear
+[13:14] [INFO] Command loaded: cp
+[13:14] [INFO] Command loaded: edit
+[13:14] [INFO] Command loaded: fetch
+[13:14] [INFO] Command loaded: help
+[13:14] [INFO] Command loaded: log
+[13:14] [INFO] Command loaded: ls
+[13:14] [INFO] Command loaded: mkdir
+[13:14] [INFO] Command loaded: mv
+[13:14] [INFO] Command loaded: open
+[13:14] [INFO] Command loaded: peripherals
+[13:14] [INFO] Command loaded: pkg
+[13:14] [INFO] Command loaded: pwd
+[13:14] [INFO] Command loaded: reboot
+[13:14] [INFO] Command loaded: reload
+[13:14] [INFO] Command loaded: rm
+[13:14] [INFO] Command loaded: run
+[13:14] [INFO] Command loaded: shutdown
+[13:14] [INFO] Command loaded: theme
+[13:14] [INFO] Command loaded: touch
+[13:14] [INFO] Commands loaded
+[13:14] [INFO] Boot completed
+[13:20] [INFO] Command: open packages
+[13:20] [INFO] Launching app: packages
+[23:54] [INFO] Command: reboot
+[23:54] [INFO] Reboot requested
+[23:54] [INFO] Boot started
+[23:54] [INFO] Command loaded: apps
+[23:54] [INFO] Command loaded: cat
+[23:54] [INFO] Command loaded: cd
+[23:54] [INFO] Command loaded: clear
+[23:54] [INFO] Command loaded: cp
+[23:54] [INFO] Command loaded: edit
+[23:54] [INFO] Command loaded: fetch
+[23:54] [INFO] Command loaded: help
+[23:54] [INFO] Command loaded: log
+[23:54] [INFO] Command loaded: ls
+[23:54] [INFO] Command loaded: mkdir
+[23:54] [INFO] Command loaded: mv
+[23:54] [INFO] Command loaded: open
+[23:54] [INFO] Command loaded: peripherals
+[23:54] [INFO] Command loaded: pkg
+[23:54] [INFO] Command loaded: pwd
+[23:54] [INFO] Command loaded: reboot
+[23:54] [INFO] Command loaded: reload
+[23:54] [INFO] Command loaded: rm
+[23:54] [INFO] Command loaded: run
+[23:54] [INFO] Command loaded: shutdown
+[23:54] [INFO] Command loaded: theme
+[23:54] [INFO] Command loaded: touch
+[23:54] [INFO] Commands loaded
+[23:54] [INFO] Boot completed
+[0:02] [INFO] Command: edit notes.txt
+[0:39] [INFO] Command: reboot
+[0:39] [INFO] Reboot requested
+[0:40] [INFO] Boot started
+[0:40] [INFO] Command loaded: apps
+[0:40] [INFO] Command loaded: cat
+[0:40] [INFO] Command loaded: cd
+[0:40] [INFO] Command loaded: clear
+[0:40] [INFO] Command loaded: cp
+[0:40] [INFO] Command loaded: edit
+[0:40] [INFO] Command loaded: fetch
+[0:40] [INFO] Command loaded: help
+[0:40] [INFO] Command loaded: log
+[0:40] [INFO] Command loaded: ls
+[0:40] [INFO] Command loaded: mkdir
+[0:40] [INFO] Command loaded: mv
+[0:40] [INFO] Command loaded: open
+[0:40] [INFO] Command loaded: peripherals
+[0:40] [INFO] Command loaded: pkg
+[0:40] [INFO] Command loaded: pwd
+[0:40] [INFO] Command loaded: reboot
+[0:40] [INFO] Command loaded: reload
+[0:40] [INFO] Command loaded: rm
+[0:40] [INFO] Command loaded: run
+[0:40] [INFO] Command loaded: shutdown
+[0:40] [INFO] Command loaded: theme
+[0:40] [INFO] Command loaded: touch
+[0:40] [INFO] Commands loaded
+[0:40] [INFO] Boot completed
+[0:43] [INFO] Command: edit notes.txt
+[4:15] [INFO] Command: reboot
+[4:15] [INFO] Reboot requested
+[4:15] [INFO] Boot started
+[4:15] [INFO] Command loaded: apps
+[4:15] [INFO] Command loaded: cat
+[4:15] [INFO] Command loaded: cd
+[4:15] [INFO] Command loaded: clear
+[4:15] [INFO] Command loaded: cp
+[4:15] [INFO] Command loaded: edit
+[4:15] [INFO] Command loaded: fetch
+[4:15] [INFO] Command loaded: help
+[4:15] [INFO] Command loaded: log
+[4:15] [INFO] Command loaded: ls
+[4:15] [INFO] Command loaded: mkdir
+[4:15] [INFO] Command loaded: mv
+[4:15] [INFO] Command loaded: open
+[4:15] [INFO] Command loaded: peripherals
+[4:15] [INFO] Command loaded: pkg
+[4:15] [INFO] Command loaded: pwd
+[4:15] [INFO] Command loaded: reboot
+[4:15] [INFO] Command loaded: reload
+[4:15] [INFO] Command loaded: rm
+[4:15] [INFO] Command loaded: run
+[4:15] [INFO] Command loaded: shutdown
+[4:15] [INFO] Command loaded: theme
+[4:15] [INFO] Command loaded: touch
+[4:15] [INFO] Commands loaded
+[4:15] [INFO] Boot completed
+[4:21] [INFO] Command: open editor
+[4:21] [INFO] Launching app: editor
+[5:16] [INFO] Command: open editor
+[5:16] [INFO] Launching app: editor
+[6:54] [INFO] Command: open files
+[6:54] [INFO] Launching app: files
+[7:01] [INFO] Launching app: editor
+[8:58] [INFO] Command: reboot
+[8:58] [INFO] Reboot requested
+[8:59] [INFO] Boot started
+[8:59] [INFO] Command loaded: apps
+[8:59] [INFO] Command loaded: cat
+[8:59] [INFO] Command loaded: cd
+[8:59] [INFO] Command loaded: clear
+[8:59] [INFO] Command loaded: cp
+[8:59] [INFO] Command loaded: edit
+[8:59] [INFO] Command loaded: fetch
+[8:59] [INFO] Command loaded: help
+[8:59] [INFO] Command loaded: log
+[8:59] [INFO] Command loaded: ls
+[8:59] [INFO] Command loaded: mkdir
+[8:59] [INFO] Command loaded: mv
+[8:59] [INFO] Command loaded: open
+[8:59] [INFO] Command loaded: peripherals
+[8:59] [INFO] Command loaded: pkg
+[8:59] [INFO] Command loaded: pwd
+[8:59] [INFO] Command loaded: reboot
+[8:59] [INFO] Command loaded: reload
+[8:59] [INFO] Command loaded: rm
+[8:59] [INFO] Command loaded: run
+[8:59] [INFO] Command loaded: shutdown
+[8:59] [INFO] Command loaded: theme
+[8:59] [INFO] Command loaded: touch
+[8:59] [INFO] Commands loaded
+[8:59] [INFO] Boot completed
+[9:07] [INFO] Command: open editor
+[9:07] [INFO] Launching app: editor
+[1:27] [INFO] Command: reboot
+[1:27] [INFO] Reboot requested
+[1:28] [INFO] Boot started
+[1:28] [INFO] Command loaded: apps
+[1:28] [INFO] Command loaded: cat
+[1:28] [INFO] Command loaded: cd
+[1:28] [INFO] Command loaded: clear
+[1:28] [INFO] Command loaded: cp
+[1:28] [INFO] Command loaded: edit
+[1:28] [INFO] Command loaded: fetch
+[1:28] [INFO] Command loaded: help
+[1:28] [INFO] Command loaded: log
+[1:28] [INFO] Command loaded: ls
+[1:28] [INFO] Command loaded: mkdir
+[1:28] [INFO] Command loaded: mv
+[1:28] [INFO] Command loaded: open
+[1:28] [INFO] Command loaded: peripherals
+[1:28] [INFO] Command loaded: pkg
+[1:28] [INFO] Command loaded: pwd
+[1:28] [INFO] Command loaded: reboot
+[1:28] [INFO] Command loaded: reload
+[1:28] [INFO] Command loaded: rm
+[1:28] [INFO] Command loaded: run
+[1:28] [INFO] Command loaded: shutdown
+[1:28] [INFO] Command loaded: theme
+[1:28] [INFO] Command loaded: touch
+[1:28] [INFO] Commands loaded
+[1:28] [INFO] Boot completed
+[6:34] [INFO] Boot started
+[6:34] [INFO] Command loaded: apps
+[6:34] [INFO] Command loaded: cat
+[6:34] [INFO] Command loaded: cd
+[6:34] [INFO] Command loaded: clear
+[6:34] [INFO] Command loaded: cp
+[6:34] [INFO] Command loaded: edit
+[6:34] [INFO] Command loaded: fetch
+[6:34] [INFO] Command loaded: help
+[6:34] [INFO] Command loaded: log
+[6:34] [INFO] Command loaded: ls
+[6:34] [INFO] Command loaded: mkdir
+[6:34] [INFO] Command loaded: mv
+[6:34] [INFO] Command loaded: open
+[6:34] [INFO] Command loaded: peripherals
+[6:34] [INFO] Command loaded: pkg
+[6:34] [INFO] Command loaded: pwd
+[6:34] [INFO] Command loaded: reboot
+[6:34] [INFO] Command loaded: reload
+[6:34] [INFO] Command loaded: rm
+[6:34] [INFO] Command loaded: run
+[6:34] [INFO] Command loaded: shutdown
+[6:34] [INFO] Command loaded: theme
+[6:34] [INFO] Command loaded: touch
+[6:34] [INFO] Commands loaded
+[6:34] [INFO] Boot completed
+[10:09] [INFO] Boot started
+[10:09] [INFO] Command loaded: apps
+[10:09] [INFO] Command loaded: cat
+[10:09] [INFO] Command loaded: cd
+[10:09] [INFO] Command loaded: clear
+[10:09] [INFO] Command loaded: cp
+[10:09] [INFO] Command loaded: edit
+[10:09] [INFO] Command loaded: fetch
+[10:09] [INFO] Command loaded: help
+[10:09] [INFO] Command loaded: log
+[10:09] [INFO] Command loaded: ls
+[10:09] [INFO] Command loaded: mkdir
+[10:09] [INFO] Command loaded: mv
+[10:09] [INFO] Command loaded: open
+[10:09] [INFO] Command loaded: peripherals
+[10:09] [INFO] Command loaded: pkg
+[10:09] [INFO] Command loaded: pwd
+[10:09] [INFO] Command loaded: reboot
+[10:09] [INFO] Command loaded: reload
+[10:09] [INFO] Command loaded: rm
+[10:09] [INFO] Command loaded: run
+[10:09] [INFO] Command loaded: shutdown
+[10:09] [INFO] Command loaded: theme
+[10:09] [INFO] Command loaded: touch
+[10:09] [INFO] Commands loaded
+[10:09] [INFO] Boot completed
+[10:37] [INFO] Command: fetch
+[12:36] [INFO] Command: open settings
+[12:36] [INFO] Launching app: settings
+[12:45] [INFO] Command: theme
+[13:24] [INFO] Command: theme
+[13:47] [INFO] Command: mv
+[14:20] [INFO] Command: run ffff.lua
+[14:20] [INFO] Running file: home/user/ffff.lua
+[14:30] [INFO] Command: stop
+[14:55] [INFO] Command: open launcher
+[14:55] [INFO] Launching app: launcher
+[15:12] [INFO] Launching app: tasks
+[16:25] [INFO] Command: reboot
+[16:25] [INFO] Reboot requested
+[16:26] [INFO] Boot started
+[16:26] [INFO] Command loaded: apps
+[16:26] [INFO] Command loaded: cat
+[16:26] [INFO] Command loaded: cd
+[16:26] [INFO] Command loaded: clear
+[16:26] [INFO] Command loaded: cp
+[16:26] [INFO] Command loaded: edit
+[16:26] [INFO] Command loaded: fetch
+[16:26] [INFO] Command loaded: help
+[16:26] [INFO] Command loaded: log
+[16:26] [INFO] Command loaded: ls
+[16:26] [INFO] Command loaded: mkdir
+[16:26] [INFO] Command loaded: mv
+[16:26] [INFO] Command loaded: open
+[16:26] [INFO] Command loaded: peripherals
+[16:26] [INFO] Command loaded: pkg
+[16:26] [INFO] Command loaded: pwd
+[16:26] [INFO] Command loaded: reboot
+[16:26] [INFO] Command loaded: reload
+[16:26] [INFO] Command loaded: rm
+[16:26] [INFO] Command loaded: run
+[16:26] [INFO] Command loaded: shutdown
+[16:26] [INFO] Command loaded: theme
+[16:26] [INFO] Command loaded: touch
+[16:26] [INFO] Commands loaded
+[16:26] [INFO] Boot completed
+[16:35] [INFO] Command: theme
+[17:03] [INFO] Command: s
+[18:08] [INFO] Command: reboot
+[18:08] [INFO] Reboot requested
+[18:09] [INFO] Boot started
+[18:09] [INFO] Command loaded: apps
+[18:09] [INFO] Command loaded: cat
+[18:09] [INFO] Command loaded: cd
+[18:09] [INFO] Command loaded: clear
+[18:09] [INFO] Command loaded: cp
+[18:09] [INFO] Command loaded: edit
+[18:09] [INFO] Command loaded: fetch
+[18:09] [INFO] Command loaded: help
+[18:09] [INFO] Command loaded: log
+[18:09] [INFO] Command loaded: ls
+[18:09] [INFO] Command loaded: mkdir
+[18:09] [INFO] Command loaded: mv
+[18:09] [INFO] Command loaded: open
+[18:09] [INFO] Command loaded: peripherals
+[18:09] [INFO] Command loaded: pkg
+[18:09] [INFO] Command loaded: pwd
+[18:09] [INFO] Command loaded: reboot
+[18:09] [INFO] Command loaded: reload
+[18:09] [INFO] Command loaded: rm
+[18:09] [INFO] Command loaded: run
+[18:09] [INFO] Command loaded: shutdown
+[18:09] [INFO] Command loaded: theme
+[18:09] [INFO] Command loaded: touch
+[18:09] [INFO] Commands loaded
+[18:09] [INFO] Boot completed
+[18:16] [INFO] Command: theme
+[18:33] [INFO] Command: theme amber
+[18:33] [ERROR] /commands/theme.lua:74: attempt to call global 'require' (a nil value)
+[20:58] [INFO] Command: reboot
+[20:58] [INFO] Reboot requested
+[20:58] [INFO] Boot started
+[20:58] [INFO] Command loaded: apps
+[20:58] [INFO] Command loaded: cat
+[20:58] [INFO] Command loaded: cd
+[20:58] [INFO] Command loaded: clear
+[20:58] [INFO] Command loaded: cp
+[20:58] [INFO] Command loaded: edit
+[20:58] [INFO] Command loaded: fetch
+[20:58] [INFO] Command loaded: help
+[20:58] [INFO] Command loaded: log
+[20:58] [INFO] Command loaded: ls
+[20:58] [INFO] Command loaded: mkdir
+[20:58] [INFO] Command loaded: mv
+[20:58] [INFO] Command loaded: open
+[20:58] [INFO] Command loaded: peripherals
+[20:58] [INFO] Command loaded: pkg
+[20:58] [INFO] Command loaded: pwd
+[20:58] [INFO] Command loaded: reboot
+[20:58] [INFO] Command loaded: reload
+[20:58] [INFO] Command loaded: rm
+[20:58] [INFO] Command loaded: run
+[20:58] [INFO] Command loaded: shutdown
+[20:58] [INFO] Command loaded: theme
+[20:58] [INFO] Command loaded: touch
+[20:58] [INFO] Commands loaded
+[20:58] [INFO] Boot completed
+[21:16] [INFO] Command: theme amber
+[21:16] [INFO] Theme changed to: amber
+[21:29] [INFO] Command: theme cyber
+[21:29] [INFO] Theme changed to: cyber
+[22:22] [INFO] Command: open
+[22:32] [INFO] Command: open editor
+[22:32] [INFO] Launching app: editor
+[22:58] [INFO] Command: open files
+[22:58] [INFO] Launching app: files
+[23:14] [INFO] Command: theme amber
+[23:14] [INFO] Theme changed to: amber
+[0:32] [INFO] Command: fetch
+[4:07] [INFO] Command: reboot
+[4:07] [INFO] Reboot requested
+[4:08] [INFO] Boot started
+[4:08] [INFO] Command loaded: apps
+[4:08] [INFO] Command loaded: cat
+[4:08] [INFO] Command loaded: cd
+[4:08] [INFO] Command loaded: clear
+[4:08] [INFO] Command loaded: cp
+[4:08] [INFO] Command loaded: edit
+[4:08] [INFO] Command loaded: fetch
+[4:08] [INFO] Command loaded: help
+[4:08] [INFO] Command loaded: log
+[4:08] [INFO] Command loaded: ls
+[4:08] [INFO] Command loaded: mkdir
+[4:08] [INFO] Command loaded: mv
+[4:08] [INFO] Command loaded: open
+[4:08] [INFO] Command loaded: peripherals
+[4:08] [INFO] Command loaded: pkg
+[4:08] [INFO] Command loaded: pwd
+[4:08] [INFO] Command loaded: reboot
+[4:08] [INFO] Command loaded: reload
+[4:08] [INFO] Command loaded: rm
+[4:08] [INFO] Command loaded: run
+[4:08] [INFO] Command loaded: shutdown
+[4:08] [INFO] Command loaded: theme
+[4:08] [INFO] Command loaded: touch
+[4:08] [INFO] Commands loaded
+[4:08] [INFO] Boot completed
+[4:28] [INFO] Command: reboot
+[4:28] [INFO] Reboot requested
+[4:29] [INFO] Boot started
+[4:29] [INFO] Command loaded: apps
+[4:29] [INFO] Command loaded: cat
+[4:29] [INFO] Command loaded: cd
+[4:29] [INFO] Command loaded: clear
+[4:29] [INFO] Command loaded: cp
+[4:29] [INFO] Command loaded: edit
+[4:29] [INFO] Command loaded: fetch
+[4:29] [INFO] Command loaded: help
+[4:29] [INFO] Command loaded: log
+[4:29] [INFO] Command loaded: ls
+[4:29] [INFO] Command loaded: mkdir
+[4:29] [INFO] Command loaded: mv
+[4:29] [INFO] Command loaded: open
+[4:29] [INFO] Command loaded: peripherals
+[4:29] [INFO] Command loaded: pkg
+[4:29] [INFO] Command loaded: pwd
+[4:29] [INFO] Command loaded: reboot
+[4:29] [INFO] Command loaded: reload
+[4:29] [INFO] Command loaded: rm
+[4:29] [INFO] Command loaded: run
+[4:29] [INFO] Command loaded: shutdown
+[4:29] [INFO] Command loaded: theme
+[4:29] [INFO] Command loaded: touch
+[4:29] [INFO] Commands loaded
+[4:29] [INFO] Boot completed
+[5:00] [INFO] Command: theme arch
+[5:00] [INFO] Theme changed to: arch
+[5:49] [INFO] Command: reboot
+[5:49] [INFO] Reboot requested
+[5:49] [INFO] Boot started
+[5:49] [INFO] Command loaded: apps
+[5:49] [INFO] Command loaded: cat
+[5:49] [INFO] Command loaded: cd
+[5:49] [INFO] Command loaded: clear
+[5:49] [INFO] Command loaded: cp
+[5:49] [INFO] Command loaded: edit
+[5:49] [INFO] Command loaded: fetch
+[5:49] [INFO] Command loaded: help
+[5:49] [INFO] Command loaded: log
+[5:49] [INFO] Command loaded: ls
+[5:49] [INFO] Command loaded: mkdir
+[5:49] [INFO] Command loaded: mv
+[5:49] [INFO] Command loaded: open
+[5:49] [INFO] Command loaded: peripherals
+[5:49] [INFO] Command loaded: pkg
+[5:49] [INFO] Command loaded: pwd
+[5:49] [INFO] Command loaded: reboot
+[5:49] [INFO] Command loaded: reload
+[5:49] [INFO] Command loaded: rm
+[5:49] [INFO] Command loaded: run
+[5:49] [INFO] Command loaded: shutdown
+[5:49] [INFO] Command loaded: theme
+[5:49] [INFO] Command loaded: touch
+[5:49] [INFO] Commands loaded
+[5:49] [INFO] Boot completed
+[8:32] [INFO] Command: reboot
+[8:32] [INFO] Reboot requested
+[8:33] [INFO] Boot started
+[8:33] [INFO] Command loaded: apps
+[8:33] [INFO] Command loaded: cat
+[8:33] [INFO] Command loaded: cd
+[8:33] [INFO] Command loaded: clear
+[8:33] [INFO] Command loaded: cp
+[8:33] [INFO] Command loaded: edit
+[8:33] [INFO] Command loaded: fetch
+[8:33] [INFO] Command loaded: help
+[8:33] [INFO] Command loaded: log
+[8:33] [INFO] Command loaded: ls
+[8:33] [INFO] Command loaded: mkdir
+[8:33] [INFO] Command loaded: mv
+[8:33] [INFO] Command loaded: open
+[8:33] [INFO] Command loaded: peripherals
+[8:33] [INFO] Command loaded: pkg
+[8:33] [INFO] Command loaded: pwd
+[8:33] [INFO] Command loaded: reboot
+[8:33] [INFO] Command loaded: reload
+[8:33] [INFO] Command loaded: rm
+[8:33] [INFO] Command loaded: run
+[8:33] [INFO] Command loaded: shutdown
+[8:33] [INFO] Command loaded: theme
+[8:33] [INFO] Command loaded: touch
+[8:33] [INFO] Commands loaded
+[8:33] [INFO] Boot completed
+[12:31] [INFO] Command: reboot
+[12:31] [INFO] Reboot requested
+[12:32] [INFO] Boot started
+[12:32] [INFO] Command loaded: apps
+[12:32] [INFO] Command loaded: cat
+[12:32] [INFO] Command loaded: cd
+[12:32] [INFO] Command loaded: clear
+[12:32] [INFO] Command loaded: cp
+[12:32] [INFO] Command loaded: edit
+[12:32] [INFO] Command loaded: fetch
+[12:32] [INFO] Command loaded: help
+[12:32] [INFO] Command loaded: log
+[12:32] [INFO] Command loaded: ls
+[12:32] [INFO] Command loaded: mkdir
+[12:32] [INFO] Command loaded: mv
+[12:32] [INFO] Command loaded: open
+[12:32] [INFO] Command loaded: peripherals
+[12:32] [INFO] Command loaded: pkg
+[12:32] [INFO] Command loaded: pwd
+[12:32] [INFO] Command loaded: reboot
+[12:32] [INFO] Command loaded: reload
+[12:32] [INFO] Command loaded: rm
+[12:32] [INFO] Command loaded: run
+[12:32] [INFO] Command loaded: shutdown
+[12:32] [INFO] Command loaded: theme
+[12:32] [INFO] Command loaded: touch
+[12:32] [INFO] Commands loaded
+[12:32] [INFO] Boot completed
+[14:01] [INFO] Boot started
+[14:01] [INFO] Command loaded: apps
+[14:01] [INFO] Command loaded: cat
+[14:01] [INFO] Command loaded: cd
+[14:01] [INFO] Command loaded: clear
+[14:01] [INFO] Command loaded: cp
+[14:01] [INFO] Command loaded: edit
+[14:01] [INFO] Command loaded: fetch
+[14:01] [INFO] Command loaded: help
+[14:01] [INFO] Command loaded: log
+[14:01] [INFO] Command loaded: ls
+[14:01] [INFO] Command loaded: mkdir
+[14:01] [INFO] Command loaded: mv
+[14:01] [INFO] Command loaded: open
+[14:01] [INFO] Command loaded: peripherals
+[14:01] [INFO] Command loaded: pkg
+[14:01] [INFO] Command loaded: pwd
+[14:01] [INFO] Command loaded: reboot
+[14:01] [INFO] Command loaded: reload
+[14:01] [INFO] Command loaded: rm
+[14:01] [INFO] Command loaded: run
+[14:01] [INFO] Command loaded: shutdown
+[14:01] [INFO] Command loaded: theme
+[14:01] [INFO] Command loaded: touch
+[14:01] [INFO] Commands loaded
+[14:01] [INFO] Boot completed
+[14:06] [INFO] Boot started
+[14:06] [INFO] Command loaded: apps
+[14:06] [INFO] Command loaded: cat
+[14:06] [INFO] Command loaded: cd
+[14:06] [INFO] Command loaded: clear
+[14:06] [INFO] Command loaded: cp
+[14:06] [INFO] Command loaded: edit
+[14:06] [INFO] Command loaded: fetch
+[14:06] [INFO] Command loaded: help
+[14:06] [INFO] Command loaded: log
+[14:06] [INFO] Command loaded: ls
+[14:06] [INFO] Command loaded: mkdir
+[14:06] [INFO] Command loaded: mv
+[14:06] [INFO] Command loaded: open
+[14:06] [INFO] Command loaded: peripherals
+[14:06] [INFO] Command loaded: pkg
+[14:06] [INFO] Command loaded: pwd
+[14:06] [INFO] Command loaded: reboot
+[14:06] [INFO] Command loaded: reload
+[14:06] [INFO] Command loaded: rm
+[14:06] [INFO] Command loaded: run
+[14:06] [INFO] Command loaded: shutdown
+[14:06] [INFO] Command loaded: theme
+[14:06] [INFO] Command loaded: touch
+[14:06] [INFO] Commands loaded
+[14:06] [INFO] Boot completed
+[14:18] [INFO] Command: help
+[14:49] [INFO] Command: apps
+[15:14] [INFO] Command: open launcher
+[15:14] [INFO] Launching app: launcher
+[15:20] [INFO] Launching app: editor
+[15:47] [INFO] Launching app: files
+[16:46] [INFO] Launching app: editor
+[17:16] [INFO] Launching app: editor
+[18:33] [INFO] Command: theme cyber
+[18:33] [INFO] Theme changed to: cyber
+[18:43] [INFO] Command: theme arch
+[18:43] [INFO] Theme changed to: arch
+[18:55] [INFO] Command: theme amber
+[18:55] [INFO] Theme changed to: amber
+[19:03] [INFO] Command: open launcher
+[19:03] [INFO] Launching app: launcher
+[19:13] [INFO] Launching app: logs
+[19:36] [INFO] Launching app: network
+[21:44] [INFO] Launching app: monitor
+[22:33] [INFO] Launching app: packages
+[22:43] [INFO] Launching app: settings
+[23:48] [INFO] Launching app: logs
+[1:11] [INFO] Launching app: monitor
+[1:39] [INFO] Launching app: about
+[2:32] [INFO] Command: help
+[3:21] [INFO] Command: clear
+[3:28] [INFO] Command: fetch
+[7:40] [INFO] Boot started
+[7:40] [INFO] Command loaded: apps
+[7:40] [INFO] Command loaded: cat
+[7:40] [INFO] Command loaded: cd
+[7:40] [INFO] Command loaded: clear
+[7:40] [INFO] Command loaded: cp
+[7:40] [INFO] Command loaded: edit
+[7:40] [INFO] Command loaded: fetch
+[7:40] [INFO] Command loaded: help
+[7:40] [INFO] Command loaded: log
+[7:40] [INFO] Command loaded: ls
+[7:40] [INFO] Command loaded: mkdir
+[7:40] [INFO] Command loaded: mv
+[7:40] [INFO] Command loaded: open
+[7:40] [INFO] Command loaded: peripherals
+[7:40] [INFO] Command loaded: pkg
+[7:40] [INFO] Command loaded: pwd
+[7:40] [INFO] Command loaded: reboot
+[7:40] [INFO] Command loaded: reload
+[7:40] [INFO] Command loaded: rm
+[7:40] [INFO] Command loaded: run
+[7:40] [INFO] Command loaded: shutdown
+[7:40] [INFO] Command loaded: theme
+[7:40] [INFO] Command loaded: touch
+[7:40] [INFO] Commands loaded
+[7:40] [INFO] Boot completed
+[8:10] [INFO] Command: open monitor
+[8:10] [INFO] Launching app: monitor
+[4:24] [INFO] Command: open logs
+[4:24] [INFO] Launching app: logs
+[5:16] [INFO] Command: help
+[5:41] [INFO] Command: edit notes
+[5:41] [INFO] Launching app: editor
+[6:25] [INFO] Command: edit notes
+[6:25] [INFO] Launching app: editor
+[9:37] [INFO] Command: reboot
+[9:37] [INFO] Reboot requested
+[9:37] [INFO] Boot started
+[9:37] [INFO] Command loaded: apps
+[9:37] [INFO] Command loaded: cat
+[9:37] [INFO] Command loaded: cd
+[9:37] [INFO] Command loaded: clear
+[9:37] [INFO] Command loaded: cp
+[9:37] [INFO] Command loaded: edit
+[9:37] [INFO] Command loaded: fetch
+[9:37] [INFO] Command loaded: help
+[9:37] [INFO] Command loaded: log
+[9:37] [INFO] Command loaded: ls
+[9:37] [INFO] Command loaded: mkdir
+[9:38] [INFO] Command loaded: mv
+[9:38] [INFO] Command loaded: open
+[9:38] [INFO] Command loaded: peripherals
+[9:38] [INFO] Command loaded: pkg
+[9:38] [INFO] Command loaded: pwd
+[9:38] [INFO] Command loaded: reboot
+[9:38] [INFO] Command loaded: reload
+[9:38] [INFO] Command loaded: rm
+[9:38] [INFO] Command loaded: run
+[9:38] [INFO] Command loaded: shutdown
+[9:38] [INFO] Command loaded: theme
+[9:38] [INFO] Command loaded: touch
+[9:38] [INFO] Commands loaded
+[9:38] [INFO] Boot completed
+[9:47] [INFO] Command: edit notes.txt
+[9:47] [INFO] Launching app: editor
+[12:26] [INFO] Command: reboot
+[12:26] [INFO] Reboot requested
+[12:27] [INFO] Boot started
+[12:27] [INFO] Command loaded: apps
+[12:27] [INFO] Command loaded: cat
+[12:27] [INFO] Command loaded: cd
+[12:27] [INFO] Command loaded: clear
+[12:27] [INFO] Command loaded: cp
+[12:27] [INFO] Command loaded: edit
+[12:27] [INFO] Command loaded: fetch
+[12:27] [INFO] Command loaded: help
+[12:27] [INFO] Command loaded: log
+[12:27] [INFO] Command loaded: ls
+[12:27] [INFO] Command loaded: mkdir
+[12:27] [INFO] Command loaded: mv
+[12:27] [INFO] Command loaded: open
+[12:27] [INFO] Command loaded: peripherals
+[12:27] [INFO] Command loaded: pkg
+[12:27] [INFO] Command loaded: pwd
+[12:27] [INFO] Command loaded: reboot
+[12:27] [INFO] Command loaded: reload
+[12:27] [INFO] Command loaded: rm
+[12:27] [INFO] Command loaded: run
+[12:27] [INFO] Command loaded: shutdown
+[12:27] [INFO] Command loaded: theme
+[12:27] [INFO] Command loaded: touch
+[12:27] [INFO] Commands loaded
+[12:27] [INFO] Boot completed
+[12:38] [INFO] Command: edit notes.txt
+[12:38] [INFO] Launching app: editor
+[23:38] [INFO] Command: reboot
+[23:38] [INFO] Reboot requested
+[23:38] [INFO] Boot started
+[23:38] [INFO] Command loaded: apps
+[23:38] [INFO] Command loaded: cat
+[23:38] [INFO] Command loaded: cd
+[23:38] [INFO] Command loaded: clear
+[23:38] [INFO] Command loaded: cp
+[23:38] [INFO] Command loaded: edit
+[23:38] [INFO] Command loaded: fetch
+[23:38] [INFO] Command loaded: help
+[23:38] [INFO] Command loaded: log
+[23:38] [INFO] Command loaded: ls
+[23:38] [INFO] Command loaded: mkdir
+[23:38] [INFO] Command loaded: mv
+[23:38] [INFO] Command loaded: open
+[23:38] [INFO] Command loaded: peripherals
+[23:38] [INFO] Command loaded: pkg
+[23:38] [INFO] Command loaded: pwd
+[23:38] [INFO] Command loaded: reboot
+[23:38] [INFO] Command loaded: reload
+[23:38] [INFO] Command loaded: rm
+[23:38] [INFO] Command loaded: run
+[23:38] [INFO] Command loaded: shutdown
+[23:38] [INFO] Command loaded: theme
+[23:38] [INFO] Command loaded: touch
+[23:38] [INFO] Commands loaded
+[23:38] [INFO] Boot completed
+[23:47] [INFO] Command: edit notes.txt
+[1:57] [INFO] Command: reboot 
+[1:57] [INFO] Reboot requested
+[1:58] [INFO] Boot started
+[1:58] [INFO] Command loaded: apps
+[1:58] [INFO] Command loaded: cat
+[1:58] [INFO] Command loaded: cd
+[1:58] [INFO] Command loaded: clear
+[1:58] [INFO] Command loaded: cp
+[1:58] [INFO] Command loaded: edit
+[1:58] [INFO] Command loaded: fetch
+[1:58] [INFO] Command loaded: help
+[1:58] [INFO] Command loaded: log
+[1:58] [INFO] Command loaded: ls
+[1:58] [INFO] Command loaded: mkdir
+[1:58] [INFO] Command loaded: mv
+[1:58] [INFO] Command loaded: open
+[1:58] [INFO] Command loaded: peripherals
+[1:58] [INFO] Command loaded: pkg
+[1:58] [INFO] Command loaded: pwd
+[1:58] [INFO] Command loaded: reboot
+[1:58] [INFO] Command loaded: reload
+[1:58] [INFO] Command loaded: rm
+[1:58] [INFO] Command loaded: run
+[1:58] [INFO] Command loaded: shutdown
+[1:58] [INFO] Command loaded: theme
+[1:58] [INFO] Command loaded: touch
+[1:58] [INFO] Commands loaded
+[1:58] [INFO] Boot completed
+[2:05] [INFO] Command: edit notes.txt
+[2:05] [INFO] Launching app: editor
+[6:44] [INFO] Command: reboot
+[6:44] [INFO] Reboot requested
+[6:45] [INFO] Boot started
+[6:45] [INFO] Command loaded: apps
+[6:45] [INFO] Command loaded: cat
+[6:45] [INFO] Command loaded: cd
+[6:45] [INFO] Command loaded: clear
+[6:45] [INFO] Command loaded: cp
+[6:45] [INFO] Command loaded: edit
+[6:45] [INFO] Command loaded: fetch
+[6:45] [INFO] Command loaded: help
+[6:45] [INFO] Command loaded: log
+[6:45] [INFO] Command loaded: ls
+[6:45] [INFO] Command loaded: mkdir
+[6:45] [INFO] Command loaded: mv
+[6:45] [INFO] Command loaded: open
+[6:45] [INFO] Command loaded: peripherals
+[6:45] [INFO] Command loaded: pkg
+[6:45] [INFO] Command loaded: pwd
+[6:45] [INFO] Command loaded: reboot
+[6:45] [INFO] Command loaded: reload
+[6:45] [INFO] Command loaded: rm
+[6:45] [INFO] Command loaded: run
+[6:45] [INFO] Command loaded: shutdown
+[6:45] [INFO] Command loaded: theme
+[6:45] [INFO] Command loaded: touch
+[6:45] [INFO] Commands loaded
+[6:45] [INFO] Boot completed
+[6:53] [INFO] Command: edit notes.txt
+[6:53] [INFO] Launching app: editor
+[17:18] [INFO] Command: reboot
+[17:18] [INFO] Reboot requested
+[17:19] [INFO] Boot started
+[17:19] [INFO] Command loaded: apps
+[17:19] [INFO] Command loaded: cat
+[17:19] [INFO] Command loaded: cd
+[17:19] [INFO] Command loaded: clear
+[17:19] [INFO] Command loaded: cp
+[17:19] [INFO] Command loaded: edit
+[17:19] [INFO] Command loaded: fetch
+[17:19] [INFO] Command loaded: help
+[17:19] [INFO] Command loaded: log
+[17:19] [INFO] Command loaded: ls
+[17:19] [INFO] Command loaded: mkdir
+[17:19] [INFO] Command loaded: mv
+[17:19] [INFO] Command loaded: open
+[17:19] [INFO] Command loaded: peripherals
+[17:19] [INFO] Command loaded: pkg
+[17:19] [INFO] Command loaded: pwd
+[17:19] [INFO] Command loaded: reboot
+[17:19] [INFO] Command loaded: reload
+[17:19] [INFO] Command loaded: rm
+[17:19] [INFO] Command loaded: run
+[17:19] [INFO] Command loaded: shutdown
+[17:19] [INFO] Command loaded: theme
+[17:19] [INFO] Command loaded: touch
+[17:19] [INFO] Commands loaded
+[17:19] [INFO] Boot completed
+[17:27] [INFO] Command: edit notes.txt
+[17:27] [INFO] Launching app: editor
+[18:55] [INFO] Boot started
+[18:55] [INFO] Command loaded: apps
+[18:55] [INFO] Command loaded: cat
+[18:55] [INFO] Command loaded: cd
+[18:55] [INFO] Command loaded: clear
+[18:55] [INFO] Command loaded: cp
+[18:55] [INFO] Command loaded: edit
+[18:55] [INFO] Command loaded: fetch
+[18:55] [INFO] Command loaded: help
+[18:55] [INFO] Command loaded: log
+[18:55] [INFO] Command loaded: ls
+[18:55] [INFO] Command loaded: mkdir
+[18:55] [INFO] Command loaded: mv
+[18:55] [INFO] Command loaded: open
+[18:55] [INFO] Command loaded: peripherals
+[18:55] [INFO] Command loaded: pkg
+[18:55] [INFO] Command loaded: pwd
+[18:55] [INFO] Command loaded: reboot
+[18:55] [INFO] Command loaded: reload
+[18:55] [INFO] Command loaded: rm
+[18:55] [INFO] Command loaded: run
+[18:55] [INFO] Command loaded: shutdown
+[18:55] [INFO] Command loaded: theme
+[18:55] [INFO] Command loaded: touch
+[18:55] [INFO] Commands loaded
+[18:55] [INFO] Boot completed
+[19:12] [INFO] Command: ls
+[19:36] [INFO] Command: edit renamed notes.txt
+[19:36] [INFO] Launching app: editor
+[0:31] [INFO] File saved: home/user/renamed.txt
+[4:17] [INFO] File saved: home/user/test.lua
+[5:14] [INFO] Command: run test.lua
+[5:14] [INFO] Running file: home/user/test.lua
+[6:34] [INFO] Command: clear
+[6:43] [INFO] Command: privet
+[6:48] [INFO] Command: help
+[7:28] [INFO] Command: cd projects/
+[9:05] [INFO] Command: ls
+[9:16] [INFO] Command: cd
+[11:21] [INFO] Command: open launcher
+[11:21] [INFO] Launching app: launcher
+[11:28] [INFO] Launching app: monitor
+[11:31] [INFO] Launching app: network
+[17:16] [INFO] Command: open launcher
+[17:16] [INFO] Launching app: launcher
+[17:24] [INFO] Launching app: settings
