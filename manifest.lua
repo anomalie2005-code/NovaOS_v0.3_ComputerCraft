@@ -105,6 +105,7 @@ return {
         "commands/shutdown.lua",
         "commands/theme.lua",
         "commands/touch.lua",
+        "commands/uninstall.lua",
 
         -- data, только переносимые настройки
         "data/aliases.lua",
