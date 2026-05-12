@@ -21,16 +21,27 @@ local function printColor(text, color)
     end
 end
 
-local function writeColor(text, color)
-    if term.isColor and term.isColor() and color then
-        term.setTextColor(color)
+local function getArg(args, index)
+    if not args then
+        return nil
     end
 
-    write(tostring(text or ""))
+    return args[index]
+end
 
-    if term.isColor and term.isColor() then
-        term.setTextColor(colors.white)
+local function normalizeArgs(args)
+    args = args or {}
+
+    if args[1] == "wget" then
+        return {
+            args[2],
+            args[3],
+            args[4],
+            args[5]
+        }
     end
+
+    return args
 end
 
 local function getFileNameFromUrl(url)
@@ -88,11 +99,11 @@ end
 
 local function loadLua(code, chunkName)
     if load then
-        local okChunk, chunk = pcall(function()
+        local ok, chunk = pcall(function()
             return load(code, chunkName or "downloaded_chunk", "t", _G)
         end)
 
-        if okChunk and chunk then
+        if ok and chunk then
             return chunk
         end
 
@@ -129,6 +140,12 @@ local function runRemote(url)
         return false, "Download failed: " .. tostring(err)
     end
 
+    local firstChar = string.sub(code, 1, 1)
+
+    if firstChar == "<" then
+        return false, "Downloaded HTML, not Lua. Use raw.githubusercontent.com link."
+    end
+
     local chunk, loadErr = loadLua(code, url)
 
     if not chunk then
@@ -151,6 +168,7 @@ local function downloadFile(url, path)
 
     printColor("Downloading:", colors.orange)
     print(url)
+
     printColor("Target:", colors.orange)
     print(path)
 
@@ -172,19 +190,19 @@ local function downloadFile(url, path)
 end
 
 function WgetCommand.run(ctx, args)
-    args = args or {}
+    args = normalizeArgs(args)
 
-    local modeOrUrl = args[2]
+    local first = getArg(args, 1)
 
-    if not modeOrUrl or modeOrUrl == "" then
+    if not first or first == "" then
         printColor("Usage:", colors.orange)
         print("  wget <url> [file]")
         print("  wget run <url>")
         return false, "Missing URL."
     end
 
-    if modeOrUrl == "run" then
-        local url = args[3]
+    if first == "run" then
+        local url = getArg(args, 2)
 
         if not url or url == "" then
             return false, "Missing URL for wget run."
@@ -193,8 +211,8 @@ function WgetCommand.run(ctx, args)
         return runRemote(url)
     end
 
-    local url = modeOrUrl
-    local path = args[3]
+    local url = first
+    local path = getArg(args, 2)
 
     return downloadFile(url, path)
 end
