@@ -10,8 +10,7 @@ local SYSTEM_DIRS = {
     "sys",
     "commands",
     "apps",
-    "lib",
-    "ui"
+    "lib"
 }
 
 local DATA_DIRS = {
