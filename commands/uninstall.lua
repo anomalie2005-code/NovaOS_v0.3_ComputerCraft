@@ -29,6 +29,12 @@ local function setColor(color)
     end
 end
 
+local function resetColor()
+    if term.isColor and term.isColor() then
+        term.setTextColor(colors.white)
+    end
+end
+
 local function writeLine(text)
     print(tostring(text or ""))
 end
@@ -36,30 +42,26 @@ end
 local function writeStatus(label, text)
     setColor(colors.orange)
     write(tostring(label or ""))
-
-    setColor(colors.white)
+    resetColor()
     print(tostring(text or ""))
 end
 
 local function writeOk(text)
     setColor(colors.lime)
     print(tostring(text or ""))
-
-    setColor(colors.white)
+    resetColor()
 end
 
 local function writeWarn(text)
     setColor(colors.yellow)
     print(tostring(text or ""))
-
-    setColor(colors.white)
+    resetColor()
 end
 
 local function writeError(text)
     setColor(colors.red)
     print(tostring(text or ""))
-
-    setColor(colors.white)
+    resetColor()
 end
 
 local function ensureDir(path)
@@ -109,30 +111,97 @@ local function deletePath(path)
     return false
 end
 
-local function askYesNo(question, defaultNo)
+local function waitYesNo(question)
     writeLine("")
-
     setColor(colors.yellow)
     write(question .. " ")
-
     setColor(colors.gray)
+    write("[y/n] ")
+    resetColor()
 
-    if defaultNo then
-        write("[y/N] ")
-    else
-        write("[Y/n] ")
+    while true do
+        local event, value = os.pullEvent()
+
+        if event == "char" then
+            value = string.lower(tostring(value or ""))
+
+            if value == "y" then
+                print("y")
+                return true
+            end
+
+            if value == "n" then
+                print("n")
+                return false
+            end
+
+        elseif event == "key" then
+            if value == keys.y then
+                print("y")
+                return true
+            end
+
+            if value == keys.n or value == keys.escape or value == keys.f10 then
+                print("n")
+                return false
+            end
+        end
     end
+end
 
-    setColor(colors.white)
+local function readExactConfirmation()
+    writeLine("")
+    writeError("DANGER: This will remove NovaOS from this computer.")
+    writeWarn("To continue, type exactly:")
+    writeLine("")
 
-    local answer = read()
-    answer = string.lower(tostring(answer or ""))
+    setColor(colors.red)
+    print("DELETE NOVAOS")
+    resetColor()
 
-    if answer == "" then
-        return not defaultNo
+    writeLine("")
+    write("> ")
+
+    local input = ""
+    term.setCursorBlink(true)
+
+    while true do
+        local event, value = os.pullEvent()
+
+        if event == "char" then
+            input = input .. tostring(value)
+            write(tostring(value))
+
+        elseif event == "key" then
+            if value == keys.enter then
+                print("")
+                term.setCursorBlink(false)
+                return input == "DELETE NOVAOS"
+
+            elseif value == keys.backspace then
+                if #input > 0 then
+                    input = string.sub(input, 1, #input - 1)
+
+                    local x, y = term.getCursorPos()
+                    if x > 1 then
+                        term.setCursorPos(x - 1, y)
+                        write(" ")
+                        term.setCursorPos(x - 1, y)
+                    end
+                end
+
+            elseif value == keys.escape or value == keys.f10 then
+                print("")
+                term.setCursorBlink(false)
+                return false
+            end
+
+        elseif event == "paste" then
+            local text = tostring(value or "")
+            input = input .. text
+            write(text)
+        end
     end
-
-    return answer == "y" or answer == "yes"
 end
 
 local function getStamp()
@@ -203,22 +272,6 @@ local function deleteUserData()
     return deleted
 end
 
-local function finalConfirmation()
-    writeLine("")
-    writeError("DANGER: This will remove NovaOS from this computer.")
-    writeWarn("To continue, type exactly:")
-    writeLine("")
-    setColor(colors.red)
-    print("DELETE NOVAOS")
-    setColor(colors.white)
-    writeLine("")
-
-    write("> ")
-    local answer = read()
-
-    return answer == "DELETE NOVAOS"
-end
-
 local function printHeader()
     writeLine("")
     writeError("NovaOS Uninstaller")
@@ -249,29 +302,29 @@ function UninstallCommand.run(ctx, args)
     writeLine("  - data")
     writeLine("  - home")
 
-    local continue = askYesNo("Continue uninstall?", true)
+    local continue = waitYesNo("Continue uninstall?")
 
     if not continue then
         writeWarn("Uninstall cancelled.")
         return false, "Uninstall cancelled."
     end
 
-    if not finalConfirmation() then
+    if not readExactConfirmation() then
         writeWarn("Confirmation failed. Uninstall cancelled.")
         return false, "Confirmation failed."
     end
 
-    local backup = askYesNo("Create backup before uninstall?", false)
+    local backup = waitYesNo("Create backup before uninstall?")
     local includeUserDataInBackup = false
 
     if backup then
-        includeUserDataInBackup = askYesNo("Include user data in backup?", false)
+        includeUserDataInBackup = waitYesNo("Include user data in backup?")
 
         local backupPath = makeBackup(includeUserDataInBackup)
         writeOk("Backup created: " .. backupPath)
     end
 
-    local deleteData = askYesNo("Also delete user data, settings and home?", true)
+    local deleteData = waitYesNo("Also delete user data, settings and home?")
 
     writeLine("")
     writeWarn("Removing NovaOS...")
