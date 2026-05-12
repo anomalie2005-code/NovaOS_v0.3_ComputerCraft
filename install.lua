@@ -7,7 +7,7 @@ Installer.version = "0.1.0"
 -- Replace this with your real raw GitHub base URL.
 -- Example:
 -- https://raw.githubusercontent.com/anomalie2005/NovaOS/main/
-local BASE_URL = "local BASE_URL = "https://raw.githubusercontent.com/anomalie2005-code/NovaOS_v0.3_ComputerCraft/main/"
+local BASE_URL = "https://raw.githubusercontent.com/anomalie2005-code/NovaOS_v0.3_ComputerCraft/main/"
 
 local MANIFEST_URL = BASE_URL .. "manifest.lua"
 
