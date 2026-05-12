@@ -1,7 +1,7 @@
 local Installer = {}
 
 Installer.name = "NovaOS Online Installer"
-Installer.version = "0.1.0"
+Installer.version = "0.3.0"
 
 local BASE_URL = "https://raw.githubusercontent.com/anomalie2005-code/NovaOS_v0.3_ComputerCraft/main/"
 local MANIFEST_URL = BASE_URL .. "manifest.lua"
@@ -20,17 +20,18 @@ local DATA_DIRS = {
     "data/backups",
     "data/backups/system",
     "home",
-    "home/user"
+    "home/user",
+    "home/user/projects"
 }
-
-local function writeLine(text)
-    print(tostring(text or ""))
-end
 
 local function setColor(color)
     if term.isColor and term.isColor() then
         term.setTextColor(color)
     end
+end
+
+local function writeLine(text)
+    print(tostring(text or ""))
 end
 
 local function writeStatus(label, text)
@@ -280,6 +281,36 @@ local function downloadManifest()
     return manifest
 end
 
+local function validateManifestFiles(manifest)
+    local seen = {}
+
+    for _, path in ipairs(manifest.files) do
+        if type(path) ~= "string" then
+            return false, "Manifest contains non-string path."
+        end
+
+        if path == "" then
+            return false, "Manifest contains empty path."
+        end
+
+        if seen[path] then
+            return false, "Duplicate file in manifest: " .. tostring(path)
+        end
+
+        seen[path] = true
+
+        if string.sub(path, 1, 1) == "/" then
+            return false, "Manifest path must be relative: " .. tostring(path)
+        end
+
+        if string.find(path, "%.%.", 1, true) then
+            return false, "Manifest path cannot contain '..': " .. tostring(path)
+        end
+    end
+
+    return true
+end
+
 local function installFiles(manifest)
     local total = #manifest.files
     local installed = 0
@@ -335,26 +366,10 @@ local function writeInstallInfo(manifest)
     return true
 end
 
-local function validateManifestFiles(manifest)
-    local seen = {}
-
-    for _, path in ipairs(manifest.files) do
-        if seen[path] then
-            return false, "Duplicate file in manifest: " .. tostring(path)
-        end
-
-        seen[path] = true
-
-        if string.sub(path, 1, 1) == "/" then
-            return false, "Manifest path must be relative: " .. tostring(path)
-        end
-
-        if string.find(path, "%.%.", 1, true) then
-            return false, "Manifest path cannot contain '..': " .. tostring(path)
-        end
-    end
-
-    return true
+local function showInstallSummary(manifest)
+    writeOk("Manifest loaded.")
+    writeStatus("Version: ", tostring(manifest.version or "unknown"))
+    writeStatus("Files: ", tostring(#manifest.files))
 end
 
 function Installer.run()
@@ -381,7 +396,7 @@ function Installer.run()
         return false
     end
 
-    writeOk("Manifest loaded. Files: " .. tostring(#manifest.files))
+    showInstallSummary(manifest)
 
     if hasExistingNovaOS() then
         writeWarn("Existing NovaOS/system files detected.")
@@ -410,6 +425,7 @@ function Installer.run()
 
     if not ok then
         writeError(result)
+        writeWarn("Installation stopped. Fix manifest/GitHub files and run installer again.")
         return false
     end
 
