@@ -3,26 +3,22 @@ local Installer = {}
 Installer.name = "NovaOS Online Installer"
 Installer.version = "0.1.0"
 
--- IMPORTANT:
--- Replace this with your real raw GitHub base URL.
--- Example:
--- https://raw.githubusercontent.com/anomalie2005/NovaOS/main/
 local BASE_URL = "https://raw.githubusercontent.com/anomalie2005-code/NovaOS_v0.3_ComputerCraft/main/"
-
 local MANIFEST_URL = BASE_URL .. "manifest.lua"
 
 local SYSTEM_DIRS = {
     "sys",
     "commands",
     "apps",
-    "lib"
+    "lib",
+    "ui"
 }
 
 local DATA_DIRS = {
     "data",
     "data/logs",
     "data/backups",
-    "data/backups/packages",
+    "data/backups/system",
     "home",
     "home/user"
 }
@@ -31,32 +27,42 @@ local function writeLine(text)
     print(tostring(text or ""))
 end
 
+local function setColor(color)
+    if term.isColor and term.isColor() then
+        term.setTextColor(color)
+    end
+end
+
 local function writeStatus(label, text)
-    term.setTextColor(colors.orange)
+    setColor(colors.orange)
     write(tostring(label or ""))
-    term.setTextColor(colors.white)
+
+    setColor(colors.white)
     print(tostring(text or ""))
 end
 
 local function writeOk(text)
-    term.setTextColor(colors.lime)
+    setColor(colors.lime)
     print(tostring(text or ""))
-    term.setTextColor(colors.white)
+
+    setColor(colors.white)
 end
 
 local function writeWarn(text)
-    term.setTextColor(colors.yellow)
+    setColor(colors.yellow)
     print(tostring(text or ""))
-    term.setTextColor(colors.white)
+
+    setColor(colors.white)
 end
 
 local function writeError(text)
-    term.setTextColor(colors.red)
+    setColor(colors.red)
     print(tostring(text or ""))
-    term.setTextColor(colors.white)
+
+    setColor(colors.white)
 end
 
-local function clear()
+local function clearScreen()
     term.setBackgroundColor(colors.black)
     term.setTextColor(colors.white)
     term.clear()
@@ -65,7 +71,7 @@ end
 
 local function ensureHttp()
     if not http then
-        return false, "HTTP API is disabled. Enable http in ComputerCraft config."
+        return false, "HTTP API is disabled. Enable HTTP in ComputerCraft config."
     end
 
     return true
@@ -139,9 +145,11 @@ end
 
 local function askYesNo(question, defaultNo)
     writeLine("")
-    term.setTextColor(colors.yellow)
+
+    setColor(colors.yellow)
     write(question .. " ")
-    term.setTextColor(colors.gray)
+
+    setColor(colors.gray)
 
     if defaultNo then
         write("[y/N] ")
@@ -149,7 +157,7 @@ local function askYesNo(question, defaultNo)
         write("[Y/n] ")
     end
 
-    term.setTextColor(colors.white)
+    setColor(colors.white)
 
     local answer = read()
     answer = string.lower(tostring(answer or ""))
@@ -159,10 +167,6 @@ local function askYesNo(question, defaultNo)
     end
 
     return answer == "y" or answer == "yes"
-end
-
-local function pathExists(path)
-    return fs.exists(path)
 end
 
 local function hasExistingNovaOS()
@@ -211,7 +215,13 @@ local function makeBackup()
     ensureDir("data/backups")
     ensureDir("data/backups/system")
 
-    local backupName = "novaos_backup_" .. tostring(os.epoch and os.epoch("utc") or math.floor(os.clock() * 1000))
+    local stamp = tostring(math.floor(os.clock() * 1000))
+
+    if os.epoch then
+        stamp = tostring(os.epoch("utc"))
+    end
+
+    local backupName = "novaos_backup_" .. stamp
     local backupRoot = fs.combine("data/backups/system", backupName)
 
     ensureDir(backupRoot)
@@ -236,15 +246,15 @@ local function createDataDirs()
 end
 
 local function showHeader()
-    clear()
+    clearScreen()
 
-    term.setTextColor(colors.orange)
+    setColor(colors.orange)
     print(" _   _                 ___  ____  ")
     print("| \\ | | _____   ____ _/ _ \\/ ___| ")
     print("|  \\| |/ _ \\ \\ / / _` | | | \\___ \\")
     print("| |\\  | (_) \\ V / (_| | |_| |___) |")
     print("|_| \\_|\\___/ \\_/ \\__,_|\\___/|____/ ")
-    term.setTextColor(colors.white)
+    setColor(colors.white)
 
     print("")
     writeStatus("Installer: ", Installer.version)
@@ -277,9 +287,9 @@ local function installFiles(manifest)
     for index, path in ipairs(manifest.files) do
         local url = BASE_URL .. path
 
-        term.setTextColor(colors.gray)
+        setColor(colors.gray)
         print("[" .. tostring(index) .. "/" .. tostring(total) .. "] " .. path)
-        term.setTextColor(colors.white)
+        setColor(colors.white)
 
         local content, err = downloadText(url)
 
@@ -308,13 +318,41 @@ local function writeInstallInfo(manifest)
         return false
     end
 
+    local installedAt = tostring(os.clock())
+
+    if os.epoch then
+        installedAt = tostring(os.epoch("utc"))
+    end
+
     handle.write("return {\n")
     handle.write("    system = \"NovaOS\",\n")
     handle.write("    version = \"" .. tostring(manifest.version or "unknown") .. "\",\n")
     handle.write("    source = \"" .. BASE_URL .. "\",\n")
-    handle.write("    installedAt = \"" .. tostring(os.epoch and os.epoch("utc") or os.clock()) .. "\"\n")
+    handle.write("    installedAt = \"" .. installedAt .. "\"\n")
     handle.write("}\n")
     handle.close()
+
+    return true
+end
+
+local function validateManifestFiles(manifest)
+    local seen = {}
+
+    for _, path in ipairs(manifest.files) do
+        if seen[path] then
+            return false, "Duplicate file in manifest: " .. tostring(path)
+        end
+
+        seen[path] = true
+
+        if string.sub(path, 1, 1) == "/" then
+            return false, "Manifest path must be relative: " .. tostring(path)
+        end
+
+        if string.find(path, "%.%.", 1, true) then
+            return false, "Manifest path cannot contain '..': " .. tostring(path)
+        end
+    end
 
     return true
 end
@@ -333,6 +371,13 @@ function Installer.run()
 
     if not manifest then
         writeError(manifestErr)
+        return false
+    end
+
+    local valid, validErr = validateManifestFiles(manifest)
+
+    if not valid then
+        writeError(validErr)
         return false
     end
 
