@@ -106,7 +106,7 @@ return {
         "commands/theme.lua",
         "commands/touch.lua",
 
-        -- data, only portable settings
+        -- data, только переносимые настройки
         "data/aliases.lua",
         "data/history.lua",
         "data/settings.lua",
@@ -142,13 +142,13 @@ return {
         "sys/services/system_info.lua",
         "sys/services/task_service.lua",
 
-        -- ui
-        "ui/ascii.lua",
-        "ui/box.lua",
-        "ui/input.lua",
-        "ui/list.lua",
-        "ui/screen.lua",
-        "ui/status_bar.lua",
-        "ui/table.lua"
+        -- sys/ui
+        "sys/ui/ascii.lua",
+        "sys/ui/box.lua",
+        "sys/ui/input.lua",
+        "sys/ui/list.lua",
+        "sys/ui/screen.lua",
+        "sys/ui/status_bar.lua",
+        "sys/ui/table.lua"
     }
 }
